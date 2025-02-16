@@ -1,1 +1,67 @@
+:root {
+    --health_bar: #d35f5f;
+}
 
+body {
+    margin: 12%;
+    margin-top: 50px;
+}
+
+.health_bar {
+  float: right;
+  width: 70%;
+  height: 25px;
+  border: solid;
+  border-color: black;
+}
+
+.progress_bar {
+  width: 70%;
+  height: 25px;
+  background-color: var(--health_bar);
+}
+
+.arrow {
+    font-size: 15px;
+    margin-left: -15px;
+}
+
+.drop_button {
+    width: 125px;
+    height: 25px;
+    border: none;
+    background-color: white;
+    font-size: 20px;
+    text-align: left;
+  }
+  
+  .drop {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+  }
+  
+  .dropdown-content a {
+    display: block;
+    text-decoration: none;
+    color: black;
+    padding: 0px 50px;
+  }
+
+  .drop:hover .dropdown-content {
+    display: block;
+}
+
+a:hover {
+    background-color: aliceblue;
+}
+
+@media (max-width: 800px) {
+    body {
+        margin: 5%;
+    }
+}
